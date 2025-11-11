@@ -1,3 +1,5 @@
+
+
 import { useEffect, useState } from "react";
 
 export default function Header() {
@@ -11,12 +13,11 @@ export default function Header() {
       sections.forEach((id) => {
         const section = document.getElementById(id);
         if (section) {
-          const top = section.offsetTop - 100;
-          if (window.scrollY >= top) {
-            current = id;
-          }
+          const top = section.offsetTop - 120;
+          if (window.scrollY >= top) current = id;
         }
       });
+
       setActiveSection(current);
     };
 
@@ -25,34 +26,41 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="flex justify-between items-center px-8 lg:px-20 py-6 bg-gray-950/60 fixed top-0 left-0 w-full z-50 backdrop-blur-xl border-b border-gray-800">
-      {/* Logo */}
-      <div className="flex items-center space-x-2">
-        <img src="/logo2.png" alt="Logo LionTech" className="w-8 h-8" />
-        <span className="font-semibold text-xl text-white">LionTech</span>
-      </div>
+    <header className="fixed top-0 left-0 w-full z-50 bg-gray-950/60 backdrop-blur-md border-b border-gray-800">
+      <div className="flex justify-between items-center px-8 lg:px-20 py-2">
+        {/* Logo */}
+        <div className="flex items-center space-x-2">
+          <img src="/logo2.png" alt="Logo LionTech" className="w-8 h-8" />
+          <span className="font-semibold text-xl text-white">LionTech</span>
+        </div>
 
-      {/* Menu */}
-      <nav className="space-x-8 text-gray-300 hidden md:flex">
-        {[
-          { id: "inicio", label: "Início" },
-          { id: "servicos", label: "Serviços" },
-          { id: "sobre", label: "Sobre" },
-          { id: "contato", label: "Contato" },
-        ].map((link) => (
-          <a
-            key={link.id}
-            href={`#${link.id}`}
-            className={`relative transition duration-300 ${
-              activeSection === link.id
-                ? "text-blue-400 font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-blue-500 after:shadow-[0_0_10px_#3b82f6]"
-                : "hover:text-blue-400"
-            }`}
-          >
-            {link.label}
-          </a>
-        ))}
-      </nav>
+        {/* Menu */}
+        <nav className="hidden md:flex space-x-10 text-gray-300 font-medium">
+          {[
+            { id: "inicio", label: "Início" },
+            { id: "servicos", label: "Serviços" },
+            { id: "sobre", label: "Sobre" },
+            { id: "contato", label: "Contato" },
+          ].map((link) => (
+            <a
+              key={link.id}
+              href={`#${link.id}`}
+              className={`relative transition-all duration-300 ease-in-out 
+                hover:text-blue-400 
+                ${activeSection === link.id ? "text-blue-400" : "text-gray-300"}
+              `}
+            >
+              {link.label}
+              {/* underline animado */}
+              <span
+                className={`absolute left-0 -bottom-1 h-[2px] bg-blue-500 shadow-[0_0_10px_#3b82f6] transition-all duration-500 ease-in-out 
+                ${activeSection === link.id ? "w-full opacity-100" : "w-0 opacity-0 group-hover:w-full group-hover:opacity-100"}
+                `}
+              ></span>
+            </a>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 }
