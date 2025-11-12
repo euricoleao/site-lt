@@ -27,7 +27,8 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-gray-950/60 backdrop-blur-md border-b border-gray-800">
-      <div className="flex justify-between items-center px-8 lg:px-20 py-2">
+      <div className="flex justify-between items-center px-6 sm:px-8 md:px-12 lg:px-20 xl:px-32
+ py-2">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <img src="/logo2.png" alt="Logo LionTech" className="w-8 h-8" />

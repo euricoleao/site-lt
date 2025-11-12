@@ -5,19 +5,17 @@ export default function Home() {
   return (
     <>
       {/* 🏠 Seção Início */}
-      <section
-        id="inicio"
-        className="min-h-screen flex flex-col lg:flex-row items-center justify-between px-8 lg:px-24 py-20 bg-gradient-to-b from-[#030014] to-[#020024] text-white"
-      >
-        <div className="flex-1 max-w-xl text-center lg:text-left">
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+     <section id="inicio" className="min-h-screen flex flex-col lg:flex-row items-center justify-between px-8 lg:px-40 py-20 bg-gradient-to-b from-[#030014] to-[#020024] text-white">
+        <div className="flex-1 max-w-xl text-center lg:text-left ">
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight max-w-7xl mx-auto w-full">
             Transforme sua <br /> presença digital <br /> com a{" "}
             <span className="text-blue-500">LionTech</span>
           </h1>
           <p className="text-gray-300 text-lg mb-8">
             Desenvolvemos sites, lojas virtuais e sistemas personalizados que impulsionam o seu negócio.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-blue-500/40">
+          <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 sm:px-8 md:px-12 lg:px-20 xl:px-32
+            rounded-xl transition-all duration-300 shadow-lg hover:shadow-blue-500/40">
             Solicite seu site agora
           </button>
         </div>
@@ -35,10 +33,10 @@ export default function Home() {
       <section id="servicos" className="py-20 text-center max-w-6xl w-full mx-auto">
         <h2 className="text-3xl font-bold text-blue-400 mb-10 mt-20">Nossos Serviços</h2>
 
-        <div className="grid md:grid-cols-3 gap-8 px-8">
+        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto w-full px-6 sm:px-8 md:px-12 lg:px-20 xl:px-32">
           {/* Criação de Sites */}
           <Link to="/modelos-sites" className="block">
-            <div className="bg-gray-900 hover:bg-gray-800 p-6 rounded-2xl shadow-md transition transform hover:-translate-y-2">
+            <div className="bg-gray-900 hover:bg-gray-800 p-6 rounded-2xl shadow-md transition transform hover:-translate-y-2 max-w-7xl mx-auto w-full">
               <img src="/site.png" alt="Sites" className="mx-auto mb-1 w-20 h-20" />
               <h3 className="text-xl font-semibold mb-3 text-blue-300">Criação de Sites</h3>
               <p className="text-gray-400">
@@ -48,6 +46,7 @@ export default function Home() {
           </Link>
 
           {/* E-commerce */}
+            <Link to="/modelos-ecommerce" className="block">
           <div className="bg-gray-900 hover:bg-gray-800 p-6 rounded-2xl shadow-md transition transform hover:-translate-y-2">
             <img src="/e-commerce.png" alt="E-commerce" className="mx-auto mb-4 w-20 h-20" />
             <h3 className="text-xl font-semibold mb-3 text-blue-300">E-commerce</h3>
@@ -55,8 +54,9 @@ export default function Home() {
               Lojas virtuais integradas com métodos de pagamento.
             </p>
           </div>
-
+          </Link>
           {/* Dropshipping */}
+            <Link to="/modelos-dropshipping" className="block">
           <div className="bg-gray-900 hover:bg-gray-800 p-6 rounded-2xl shadow-md transition transform hover:-translate-y-2">
             <img src="/drops.png" alt="Dropshipping" className="mx-auto mb-4 w-20 h-20" />
             <h3 className="text-xl font-semibold mb-3 text-blue-300">Dropshipping</h3>
@@ -64,6 +64,7 @@ export default function Home() {
               Soluções completas para seu negócio online sem estoque.
             </p>
           </div>
+          </Link>
         </div>
       </section>
 
