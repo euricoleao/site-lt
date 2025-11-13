@@ -12,21 +12,43 @@ const dropModels: DropModel[] = [
   {
     id: 1,
     title: "Loja Automática",
-    image: "/drop1.png",
+    image: "/dps-1.webp",
     description:
       "Sistema de dropshipping completo, com integração automática com fornecedores e atualizações em tempo real.",
   },
   {
     id: 2,
     title: "Loja Internacional",
-    image: "/drop2.png",
+    image: "/dps-5.webp",
     description:
       "Modelo voltado para vendas internacionais, com suporte a múltiplas moedas e idiomas.",
   },
   {
     id: 3,
     title: "Loja de Nicho",
-    image: "/drop3.png",
+    image: "/dps-4.webp",
+    description:
+      "Ideal para quem quer focar em produtos de um segmento específico e aumentar a conversão.",
+  },
+
+   {
+    id: 1,
+    title: "Loja Automática",
+    image: "/dps-1.webp",
+    description:
+      "Sistema de dropshipping completo, com integração automática com fornecedores e atualizações em tempo real.",
+  },
+  {
+    id: 2,
+    title: "Loja Internacional",
+    image: "/dps-2.webp",
+    description:
+      "Modelo voltado para vendas internacionais, com suporte a múltiplas moedas e idiomas.",
+  },
+  {
+    id: 3,
+    title: "Loja de Nicho",
+    image: "/dps-3.webp",
     description:
       "Ideal para quem quer focar em produtos de um segmento específico e aumentar a conversão.",
   },

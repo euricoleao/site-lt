@@ -31,7 +31,7 @@ export default function Header() {
  py-2">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src="/logo2.png" alt="Logo LionTech" className="w-8 h-8" />
+          <img src="/lion.png" alt="Logo LionTech"className="w-15 h-10 scale-150"/>
           <span className="font-semibold text-xl text-white">LionTech</span>
         </div>
 

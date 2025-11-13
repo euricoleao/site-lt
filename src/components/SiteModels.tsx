@@ -43,7 +43,7 @@ export default function SiteModels() {
         {/* Modelo 1 */}
         <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
           <img
-            src="/model1.png"
+            src="/web-4.webp"
             alt="Site Profissional"
             className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
           />
@@ -56,7 +56,7 @@ export default function SiteModels() {
         {/* Modelo 2 */}
         <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
           <img
-            src="/model2.png"
+            src="/web-6.jpg"
             alt="Landing Page"
             className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
           />
@@ -69,7 +69,7 @@ export default function SiteModels() {
         {/* Modelo 3 */}
         <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
           <img
-            src="/model3.png"
+            src="/web.jpg"
             alt="Portfólio Criativo"
             className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
           />
@@ -82,7 +82,7 @@ export default function SiteModels() {
           {/* Modelo 1 */}
         <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
           <img
-            src="/model1.png"
+            src="/web.jpg"
             alt="Site Profissional"
             className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
           />
@@ -95,7 +95,7 @@ export default function SiteModels() {
         {/* Modelo 2 */}
         <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
           <img
-            src="/model2.png"
+            src="/web-9.jpg"
             alt="Landing Page"
             className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
           />
@@ -108,7 +108,7 @@ export default function SiteModels() {
         {/* Modelo 3 */}
         <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
           <img
-            src="/model3.png"
+            src="/web-7.jpg"
             alt="Portfólio Criativo"
             className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
           />
@@ -120,11 +120,12 @@ export default function SiteModels() {
 
           {/* Modelo 1 */}
         <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
-          <img
-            src="/model1.png"
-            alt="Site Profissional"
-            className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
-          />
+        <img
+  src="/web.jpg"
+  alt="Portfólio Criativo Minimalista"
+  className="w-full h-56 object-contain rounded-xl mb-5 border border-gray-700 shadow-lg transition-transform duration-300 hover:scale-105"
+/>
+
           <h3 className="text-xl font-semibold text-blue-300 mb-3">Site Profissional</h3>
           <p className="text-gray-400">
             Modelo ideal para empresas com design institucional moderno.
@@ -134,7 +135,7 @@ export default function SiteModels() {
         {/* Modelo 2 */}
         <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
           <img
-            src="/model2.png"
+            src="/web-5.jpg"
             alt="Landing Page"
             className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
           />
@@ -147,7 +148,7 @@ export default function SiteModels() {
         {/* Modelo 3 */}
         <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
           <img
-            src="/model3.png"
+            src="/web-5.jpg"
             alt="Portfólio Criativo"
             className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
           />

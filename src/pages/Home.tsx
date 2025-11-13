@@ -38,7 +38,7 @@ export default function Home() {
           <Link to="/modelos-sites" className="block">
             <div className="bg-gray-900 hover:bg-gray-800 p-6 rounded-2xl shadow-md transition transform hover:-translate-y-2 max-w-7xl mx-auto w-full">
               <img src="/site.png" alt="Sites" className="mx-auto mb-1 w-20 h-20" />
-              <h3 className="text-xl font-semibold mb-3 text-blue-300">Criação de Sites</h3>
+              <h3 className="text-xl font-semibold mb-3 text-blue-300">Criação de Sites  de reinaldo</h3>
               <p className="text-gray-400">
                 Sites modernos e rápidos com design responsivo.
               </p>

@@ -12,19 +12,94 @@ const ecommerceModels: EcommerceModel[] = [
   {
     id: 1,
     title: "Loja Moderna",
-    image: "/ecommerce1.png",
+    image: "/webv-1.avif",
     description: "Design dinâmico e moderno, ideal para marcas que querem impacto visual.",
   },
   {
     id: 2,
     title: "Loja Minimalista",
-    image: "/ecommerce2.png",
+    image: "/webv-2.avif",
     description: "Estilo limpo e elegante, com foco total nos produtos.",
   },
   {
     id: 3,
     title: "Loja Premium",
-    image: "/ecommerce3.png",
+    image: "/webv-4.avif",
+    description: "Visual sofisticado, perfeito para marcas que valorizam exclusividade.",
+  },
+   {
+    id: 1,
+    title: "Loja Moderna",
+    image: "/webv-5.avif",
+    description: "Design dinâmico e moderno, ideal para marcas que querem impacto visual.",
+  },
+  {
+    id: 2,
+    title: "Loja Minimalista",
+    image: "/webv-6.avif",
+    description: "Estilo limpo e elegante, com foco total nos produtos.",
+  },
+  {
+    id: 3,
+    title: "Loja Premium",
+    image: "/webv-7.avif",
+    description: "Visual sofisticado, perfeito para marcas que valorizam exclusividade.",
+  },
+
+   {
+    id: 1,
+    title: "Loja Moderna",
+    image: "/webv-8.avif",
+    description: "Design dinâmico e moderno, ideal para marcas que querem impacto visual.",
+  },
+  {
+    id: 2,
+    title: "Loja Minimalista",
+    image: "/webv-10.avif",
+    description: "Estilo limpo e elegante, com foco total nos produtos.",
+  },
+  {
+    id: 3,
+    title: "Loja Premium",
+    image: "/webv-11.avif",
+    description: "Visual sofisticado, perfeito para marcas que valorizam exclusividade.",
+  },
+
+   {
+    id: 1,
+    title: "Loja Moderna",
+    image: "/webv-12.avif",
+    description: "Design dinâmico e moderno, ideal para marcas que querem impacto visual.",
+  },
+  {
+    id: 2,
+    title: "Loja Minimalista",
+    image: "/webv.avif",
+    description: "Estilo limpo e elegante, com foco total nos produtos.",
+  },
+  {
+    id: 3,
+    title: "Loja Premium",
+    image: "/webv-13.avif",
+    description: "Visual sofisticado, perfeito para marcas que valorizam exclusividade.",
+  },
+
+   {
+    id: 1,
+    title: "Loja Moderna",
+    image: "/webv-14.avif",
+    description: "Design dinâmico e moderno, ideal para marcas que querem impacto visual.",
+  },
+  {
+    id: 2,
+    title: "Loja Minimalista",
+    image: "/webv-15.avif",
+    description: "Estilo limpo e elegante, com foco total nos produtos.",
+  },
+  {
+    id: 3,
+    title: "Loja Premium",
+    image: "/webv-16.avif",
     description: "Visual sofisticado, perfeito para marcas que valorizam exclusividade.",
   },
 ];
