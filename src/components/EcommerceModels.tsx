@@ -108,7 +108,8 @@ export default function EcommerceModels() {
   return (
     <section
       id="modelos-ecommerce"
-      className="bg-gradient-to-b from-[#020024] to-[#030014] text-white py-20 px-8 lg:px-20"
+      className="bg-gradient-to-b from-[#bebcdd] to-[#030014] text-white py-20 px-8 lg:px-20"
+      style={{ backgroundImage: "url('/bgservice.jpg')" }}
     >
       <div className="max-w-6xl mx-auto text-center">
            <Link

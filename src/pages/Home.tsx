@@ -22,23 +22,31 @@ export default function Home() {
 
         <div className="flex-1 mt-12 lg:mt-0 flex justify-center">
           <img
-            src="/cpu.png"
+            src="/desev-2.jpeg"
             alt="Computador e celular representando tecnologia"
-            className="w-[400px] lg:w-[400px] drop-shadow-[0_0_40px_rgba(0,115,255,0.5)] mt-9"
+            className="w-[600px]  h-[300px] drop-shadow-[0_0_40px_rgba(0,115,255,0.5)]  border-b-blue-700 3px rounded-lg object-cover"
           />
         </div>
       </section>
 
       {/* 💼 Seção Serviços */}
-      <section id="servicos" className="py-20 text-center max-w-6xl w-full mx-auto">
+      <section
+  id="servicos"
+  className="min-h-screen bg-cover bg-center bg-no-repeat py-20 text-center mx-auto "
+  style={{ backgroundImage: "url('/bgservice.jpg')" }}
+>
+      {/* <section id="servicos" className="py-20 text-center max-w-6xl w-full mx-auto"> */}
         <h2 className="text-3xl font-bold text-blue-400 mb-10 mt-20">Nossos Serviços</h2>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto w-full px-6 sm:px-8 md:px-12 lg:px-20 xl:px-32">
           {/* Criação de Sites */}
           <Link to="/modelos-sites" className="block">
-            <div className="bg-gray-900 hover:bg-gray-800 p-6 rounded-2xl shadow-md transition transform hover:-translate-y-2 max-w-7xl mx-auto w-full">
+            <div className=" bg-gray-900 hover:bg-gray-800 p-6 rounded-2xl shadow-md transition transform hover:-translate-y-2 max-w-7xl mx-auto w-full  bg-cover bg-center bg-no-repeat " 
+            
+            >
+              
               <img src="/site.png" alt="Sites" className="mx-auto mb-1 w-20 h-20" />
-              <h3 className="text-xl font-semibold mb-3 text-blue-300">Criação de Sites  de reinaldo</h3>
+              <h3 className="text-xl font-semibold mb-3 text-blue-300">Criação de Sites </h3>
               <p className="text-gray-400">
                 Sites modernos e rápidos com design responsivo.
               </p>
@@ -69,7 +77,8 @@ export default function Home() {
       </section>
 
       {/* 🧑‍💻 Seção Sobre / Nossos Cases */}
-      <section id="sobre" className="bg-[#020617] py-20">
+      <section id="sobre" className="bg-[#020617] py-20 min-h-screen bg-cover bg-center bg-no-repeat" 
+      style={{backgroundImage: "url('/bgservice.jpg')"}}>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6">
           <div className="text-white md:w-1/2 mb-10 md:mb-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Nossos cases</h2>
@@ -83,11 +92,21 @@ export default function Home() {
           </div>
 
           <div className="md:w-1/2 flex justify-center">
-            <img
+          {/* Vídeo de fundo */}
+  <video
+    src="/videocases.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
+   className="w-[400px] md:w-[480px] drop-shadow-[0_0_25px_rgba(59,130,246,0.4)] mt-20 rounded-2xl"
+  />
+ <div className="absolute inset-0 bg-black/50"></div>
+            {/* <img
               src="/not.png"
               alt="Notebook mostrando site da LionTech"
               className="w-[400px] md:w-[480px] drop-shadow-[0_0_25px_rgba(59,130,246,0.4)] mt-20"
-            />
+            /> */}
           </div>
         </div>
       </section>
@@ -110,8 +129,8 @@ export default function Home() {
 
       {/* ⚙️ Footer */}
       <footer className="bg-gradient-to-r from-blue-900/40 to-blue-700/20 text-center py-10 border-t border-gray-800">
-        <div className="flex justify-center items-center space-x-3 mb-2">
-          <img src="/logo2.png" alt="LionTech Logo" className="w-8 h-8" />
+        <div className="flex justify-center items-center mb-2">
+          <img src="/lion.png" alt="Logo LionTech"className="w-15 h-15 scale-150"/>
           <span className="font-semibold text-lg">LionTech</span>
         </div>
         <p className="text-gray-400 text-sm mb-2">

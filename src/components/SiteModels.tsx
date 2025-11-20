@@ -13,8 +13,9 @@ export default function SiteModels() {
 
    
       id="modelos-sites"
-      className="bg-gradient-to-b from-[#020024] to-[#030014] text-white py-13 px-8 lg:px-20 min-h-screen flex flex-col items-center justify-center"
-    >
+      className="bg-gradient-to-b from-[#020024] to-[#030014] text-white py-13 px-8 lg:px-20 min-h-screen flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: "url('/bgservice.jpg')" }}
+   >
 
        <Link
   to="/"
