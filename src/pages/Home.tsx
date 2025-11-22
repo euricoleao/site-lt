@@ -36,25 +36,70 @@ export default function Home() {
   style={{ backgroundImage: "url('/bgservice.jpg')" }}
 >
       {/* <section id="servicos" className="py-20 text-center max-w-6xl w-full mx-auto"> */}
-        <h2 className="text-3xl font-bold text-blue-400 mb-10 mt-20">Nossos Serviços</h2>
+        <h2 className="text-3xl font-bold text-blue-400 mb-10 mt-2">Nossos Serviços</h2>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto w-full px-6 sm:px-8 md:px-12 lg:px-20 xl:px-32">
           {/* Criação de Sites */}
           <Link to="/modelos-sites" className="block">
-            <div className=" bg-gray-900 hover:bg-gray-800 p-6 rounded-2xl shadow-md transition transform hover:-translate-y-2 max-w-7xl mx-auto w-full  bg-cover bg-center bg-no-repeat " 
-            
-            >
-              
-              <img src="/site.png" alt="Sites" className="mx-auto mb-1 w-20 h-20" />
-              <h3 className="text-xl font-semibold mb-3 text-blue-300">Criação de Sites </h3>
-              <p className="text-gray-400">
-                Sites modernos e rápidos com design responsivo.
-              </p>
-            </div>
-          </Link>
+          <img src="/site.png" alt="sites" className="mx-auto mb-4 w-30 h-20 rounded-b-2xl" />
+  <div className="relative overflow-hidden p-6 rounded-2xl shadow-md max-w-7xl mx-auto w-full h-60 group">
+
+    {/* Vídeo de fundo */}
+    <video
+      src="/videocases.mp4"  
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute top-0 left-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+    />
+
+    {/* Overlay escuro (opcional) */}
+    <div className="absolute inset-0 bg-black/40"></div>
+
+    {/* Conteúdo acima do vídeo */}
+    <div className="relative z-10 text-center">
+      {/* <img src="/site.png" alt="Sites" className="mx-auto mb-5 w-15 h-15 rounded-3xl" /> */}
+      <h3 className="text-3xl font-extrabold  text-blue-300 mb-[-6px] pt-4  mt-22">Criar  Sites
+       
+      </h3>
+      <p className="text-gray-300">Sites modernos e rápidos com design responsivo.</p>
+    </div>
+
+  </div>
+</Link>
 
           {/* E-commerce */}
-            <Link to="/modelos-ecommerce" className="block">
+           <Link to="/modelos-ecommerce" className="block">
+           <img src="/e-commerce.png" alt="E-commerce" className="mx-auto mb-4 w-30 h-20 rounded-b-2xl" />
+  <div className="relative overflow-hidden p-6 rounded-2xl shadow-md max-w-7xl mx-auto w-full h-60 group">
+
+    {/* Vídeo de fundo */}
+    <video
+      src="/videocases.mp4"  
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute top-0 left-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+    />
+
+    {/* Overlay escuro (opcional) */}
+    <div className="absolute inset-0 bg-black/40"></div>
+
+    {/* Conteúdo acima do vídeo */}
+    <div className="relative z-10 text-center">
+      {/* <img src="/site.png" alt="Sites" className="mx-auto mb-5 w-15 h-15 rounded-3xl" /> */}
+      <h3 className="text-3xl font-extrabold  text-blue-300 mb-[-6px] pt-4  mt-22">E-commerce
+       
+      </h3>
+      <p className="text-gray-300"> Lojas virtuais integradas com métodos de pagamento.</p>
+    </div>
+
+  </div>
+</Link>
+
+            {/* <Link to="/modelos-ecommerce" className="block">
           <div className="bg-gray-900 hover:bg-gray-800 p-6 rounded-2xl shadow-md transition transform hover:-translate-y-2">
             <img src="/e-commerce.png" alt="E-commerce" className="mx-auto mb-4 w-20 h-20" />
             <h3 className="text-xl font-semibold mb-3 text-blue-300">E-commerce</h3>
@@ -62,17 +107,46 @@ export default function Home() {
               Lojas virtuais integradas com métodos de pagamento.
             </p>
           </div>
-          </Link>
+          </Link> */}
           {/* Dropshipping */}
-            <Link to="/modelos-dropshipping" className="block">
-          <div className="bg-gray-900 hover:bg-gray-800 p-6 rounded-2xl shadow-md transition transform hover:-translate-y-2">
-            <img src="/drops.png" alt="Dropshipping" className="mx-auto mb-4 w-20 h-20" />
+<Link to="/modelos-dropshipping" className="block">
+ <img src="/drops.png" alt="Dropshippinbg" className="mx-auto mb-4 w-30 h-20 rounded-b-2xl" />
+  <div className="relative overflow-hidden p-6 rounded-2xl shadow-md max-w-7xl mx-auto w-full h-60 group">
+
+    {/* Vídeo de fundo */}
+    <video
+      src="/videocases.mp4"  
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute top-0 left-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+    />
+
+    {/* Overlay escuro (opcional) */}
+    <div className="absolute inset-0 bg-black/40"></div>
+
+    {/* Conteúdo acima do vídeo */}
+    <div className="relative z-10 text-center">
+      {/* <img src="/site.png" alt="Sites" className="mx-auto mb-5 w-15 h-15 rounded-3xl" /> */}
+      <h3 className="text-3xl font-extrabold  text-blue-300 mb-[-6px] pt-4  mt-22">Dropshipping
+       
+      </h3>
+      <p className="text-gray-300">  completas para seu negócio online sem estoque.</p>
+    </div>
+
+  </div>
+</Link>
+
+            {/* <Link to="/modelos-dropshipping" className="block">
+          <div className="bg-gray-900 hover:g-gray-800 p-6 rounded-2xl shadow-md transition transform hover:-translate-y-2">
+            <img src="/drops.png" alt="Dropshippinbg" className="mx-auto mb-4 w-20 h-20" />
             <h3 className="text-xl font-semibold mb-3 text-blue-300">Dropshipping</h3>
             <p className="text-gray-400">
-              Soluções completas para seu negócio online sem estoque.
+               completas para seu negócio online sem estoque.
             </p>
           </div>
-          </Link>
+          </Link> */}
         </div>
       </section>
 
@@ -83,7 +157,7 @@ export default function Home() {
           <div className="text-white md:w-1/2 mb-10 md:mb-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Nossos cases</h2>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Conheça alguns dos projetos que desenvolvemos para nossos clientes,
+              Conheça algunSoluçõess dos projetos que desenvolvemos para nossos clientes,
               unindo design moderno, performance e presença digital de alto impacto.
             </p>
             <button className="bg-gradient-to-r from-blue-600 to-blue-400 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:opacity-90 transition">
