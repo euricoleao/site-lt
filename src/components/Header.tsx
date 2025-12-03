@@ -36,31 +36,109 @@ export default function Header() {
         </div>
 
         {/* Menu */}
-        <nav className="hidden md:flex space-x-10 text-gray-300 font-medium">
-          {[
-            { id: "inicio", label: "Início" },
-            { id: "servicos", label: "Serviços" },
-            { id: "sobre", label: "Sobre" },
-            { id: "contato", label: "Contato" },
-          ].map((link) => (
-            <a
-              key={link.id}
-              href={`#${link.id}`}
-              className={`relative transition-all duration-300 ease-in-out 
-                hover:text-blue-400 
-                ${activeSection === link.id ? "text-blue-400" : "text-gray-300"}
-              `}
-            >
-              {link.label}
-              {/* underline animado */}
-              <span
-                className={`absolute left-0 -bottom-1 h-[2px] bg-blue-500 shadow-[0_0_10px_#3b82f6] transition-all duration-500 ease-in-out 
-                ${activeSection === link.id ? "w-full opacity-100" : "w-0 opacity-0 group-hover:w-full group-hover:opacity-100"}
-                `}
-              ></span>
-            </a>
-          ))}
-        </nav>
+      <nav className="hidden md:flex space-x-10 text-gray-300 font-medium">
+  
+  {/* 🔵 Início */}
+  <a
+    href="#inicio"
+    className={`relative group transition-all duration-300 
+      hover:text-blue-400 
+      ${activeSection === "inicio" ? "text-blue-400" : "text-gray-300"}
+    `}
+  >
+    Início
+    <span
+      className={`absolute left-0 -bottom-1 h-[2px] bg-blue-500 shadow-[0_0_10px_#3b82f6]
+        transition-all duration-500 
+        ${activeSection === "inicio" ? "w-full opacity-100" : "w-0 opacity-0 group-hover:w-full group-hover:opacity-100"}
+      `}
+    ></span>
+  </a>
+
+  {/* 🟣 Serviços + Dropdown */}
+  <div className="relative group">
+    <a href="#servicos"
+      className={`relative group transition-all duration-300 cursor-pointer
+        hover:text-blue-400 
+        ${activeSection === "servicos" ? "text-blue-400" : "text-gray-300"}
+      `}
+    >
+      Serviços
+      <span
+        className={`absolute left-0 -bottom-1 h-[2px] bg-blue-500 shadow-[0_0_10px_#3b82f6]
+          transition-all duration-500 
+          ${activeSection === "servicos" ? "w-full opacity-100" : "w-0 opacity-0 group-hover:w-full group-hover:opacity-100"}
+        `}
+      ></span>
+    </a>
+
+    {/* Dropdown */}
+    <div
+      className="
+        absolute left-0 mt-3 w-40 bg-[#0a0a14] border border-gray-700 rounded-xl shadow-xl 
+        opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+        transition-all duration-300 transform origin-top scale-95 group-hover:scale-100 z-50
+      "
+    >
+      <a
+        href="/modelos-sites"
+        className="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-blue-400 rounded-t-xl transition"
+      >
+        Criação de Sites
+      </a>
+
+      <a
+        href="/modelos-ecommerce"
+        className="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-blue-400 transition"
+      >
+        E-commerce
+      </a>
+
+      <a
+        href="/modelos-dropshipping"
+        className="block px-4 py-3 text-gray-300 hover:bg-gray-800 hover:text-blue-400 rounded-b-xl transition"
+      >
+        Dropshipping
+      </a>
+    </div>
+  </div>
+
+  {/* 🟠 Sobre */}
+  <a
+    href="#sobre"
+    className={`relative group transition-all duration-300 
+      hover:text-blue-400 
+      ${activeSection === "sobre" ? "text-blue-400" : "text-gray-300"}
+    `}
+  >
+    Sobre
+    <span
+      className={`absolute left-0 -bottom-1 h-[2px] bg-blue-500 shadow-[0_0_10px_#3b82f6]
+        transition-all duration-500 
+        ${activeSection === "sobre" ? "w-full opacity-100" : "w-0 opacity-0 group-hover:w-full group-hover:opacity-100"}
+      `}
+    ></span>
+  </a>
+
+  {/* 🟡 Contato */}
+  <a
+    href="#contato"
+    className={`relative group transition-all duration-300 
+      hover:text-blue-400 
+      ${activeSection === "contato" ? "text-blue-400" : "text-gray-300"}
+    `}
+  >
+    Contato
+    <span
+      className={`absolute left-0 -bottom-1 h-[2px] bg-blue-500 shadow-[0_0_10px_#3b82f6]
+        transition-all duration-500 
+        ${activeSection === "contato" ? "w-full opacity-100" : "w-0 opacity-0 group-hover:w-full group-hover:opacity-100"}
+      `}
+    ></span>
+  </a>
+
+</nav>
+
       </div>
     </header>
   );

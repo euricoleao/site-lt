@@ -32,11 +32,16 @@ export default function Home() {
     <p className="text-gray-300 text-lg mb-8">
       Desenvolvemos sites, lojas virtuais e sistemas personalizados que impulsionam o seu negócio.
     </p>
-<a 
-  href="mailto:contato@liontech.com" 
-     className="  hover:bg-blue-700 text-white font-semibold px-8 lg:px-20 rounded-xl transition-all duration-300 shadow-lg hover:shadow-blue-500/40 border-2 border-blue-500 bg-blue-600 py-4 lg:py-5">
-      Solicite seu site agora
-    </a>
+<a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=liontech.create@gmail.com&su=Solicitação%20de%20Criação%20de%20Site&body=Olá%2C%20tenho%20interesse%20em%20desenvolver%20um%20site%20com%20a%20LionTech.%20Poderia%20me%20passar%20mais%20informações%3F"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:border-blue-200 text-white font-semibold px-8 lg:px-20 rounded-xl transition-all duration-300 shadow-lg hover:shadow-blue-500/40 border-2 border-blue-500 bg-blue-950 py-4 lg:py-5"
+>
+  Solicite seu site agora
+</a>
+
+
   </div>
 
   <div className="relative flex-1 mt-12 lg:mt-0 flex justify-center z-10">
