@@ -236,7 +236,13 @@ export default function Home() {
         </p>
         <div className="flex justify-center space-x-6 mb-1">
           <a href="#"><FaFacebook size={20} className="hover:text-blue-400" /></a>
-          <a href="#"><FaInstagram size={20} className="hover:text-blue-400" /></a>
+         <a 
+  href="https://instagram.com/liontechcreate" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <FaInstagram size={20} className="hover:text-blue-400" />
+</a>
           <a href="#"><FaLinkedin size={20} className="hover:text-blue-400" /></a>
         </div>
       </footer>

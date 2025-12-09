@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function SiteModels() {
   const navigate = useNavigate();
+  
+  const [galleryOpen, setGalleryOpen] = useState(false);
+
+
 
   return (
 
@@ -42,122 +46,385 @@ export default function SiteModels() {
         className="grid md:grid-cols-3 gap-10 max-w-6xl w-full"
       >
         {/* Modelo 1 */}
-        <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
-          <img
-            src="/web-4.webp"
-            alt="Site Profissional"
-            className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
-          />
-          <h3 className="text-xl font-semibold text-blue-300 mb-3">Site Profissional</h3>
-          <p className="text-gray-400">
-            Modelo ideal para empresas com design institucional moderno.
-          </p>
-        </div>
+      {/* <div
+  onClick={() => setSelectedModel("portfolio")}
+  className="cursor-pointer bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2"
+>
+  <img
+    src="/web.jpg"
+    alt="Portfólio Criativo"
+    className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
+  />
+  <h3 className="text-xl font-semibold text-blue-300 mb-3">
+    Portfólio Criativo
+  </h3>
+  <p className="text-gray-400">
+    Perfeito para designers e fotógrafos mostrarem seu trabalho.
+  </p>
+</div> */}
 
-        {/* Modelo 2 */}
-        <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
-          <img
-            src="/web-6.jpg"
-            alt="Landing Page"
-            className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
-          />
-          <h3 className="text-xl font-semibold text-blue-300 mb-3">Landing Page</h3>
-          <p className="text-gray-400">
-            Focada em conversão e campanhas de marketing.
-          </p>
-        </div>
+{/* Modal 1*/}
+<div
+  onClick={() => setGalleryOpen(true)}
+  className="cursor-pointer bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2"
+>
+  <img
+    src="/web-5.jpg"
+    className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
+  />
+  <h3 className="text-xl font-semibold text-blue-300 mb-3">Portfólio Criativo</h3>
+  <p className="text-gray-400">Perfeito para designers e fotógrafos mostrarem seu trabalho.</p>
+</div>
 
-        {/* Modelo 3 */}
-        <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
-          <img
-            src="/web.jpg"
-            alt="Portfólio Criativo"
-            className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
-          />
-          <h3 className="text-xl font-semibold text-blue-300 mb-3">Portfólio Criativo</h3>
-          <p className="text-gray-400">
-            Perfeito para designers e fotógrafos mostrarem seu trabalho.
-          </p>
-        </div>
+{galleryOpen && (
+  <div
+    className="fixed inset-0 bg-black/90 z-50 overflow-y-scroll p-6"
+    onClick={() => setGalleryOpen(false)}
+  >
+    <div
+      className="max-w-3xl mx-auto space-y-6"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <h2 className="text-2xl font-semibold text-blue-400 mb-4 text-center">
+        Portfólio Criativo – Prévia Completa
+      </h2>
 
-          {/* Modelo 1 */}
-        <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
-          <img
-            src="/web.jpg"
-            alt="Site Profissional"
-            className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
-          />
-          <h3 className="text-xl font-semibold text-blue-300 mb-3">Site Profissional</h3>
-          <p className="text-gray-400">
-            Modelo ideal para empresas com design institucional moderno.
-          </p>
-        </div>
-
-        {/* Modelo 2 */}
-        <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
-          <img
-            src="/web-9.jpg"
-            alt="Landing Page"
-            className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
-          />
-          <h3 className="text-xl font-semibold text-blue-300 mb-3">Landing Page</h3>
-          <p className="text-gray-400">
-            Focada em conversão e campanhas de marketing.
-          </p>
-        </div>
-
-        {/* Modelo 3 */}
-        <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
-          <img
-            src="/web-7.jpg"
-            alt="Portfólio Criativo"
-            className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
-          />
-          <h3 className="text-xl font-semibold text-blue-300 mb-3">Portfólio Criativo</h3>
-          <p className="text-gray-400">
-            Perfeito para designers e fotógrafos mostrarem seu trabalho.
-          </p>
-        </div>
-
-          {/* Modelo 1 */}
-        <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
+      {/* Imagem 1 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
         <img
-  src="/web.jpg"
-  alt="Portfólio Criativo Minimalista"
-  className="w-full h-56 object-contain rounded-xl mb-5 border border-gray-700 shadow-lg transition-transform duration-300 hover:scale-105"
-/>
+          src="/templ-3.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
 
-          <h3 className="text-xl font-semibold text-blue-300 mb-3">Site Profissional</h3>
-          <p className="text-gray-400">
-            Modelo ideal para empresas com design institucional moderno.
-          </p>
-        </div>
+      {/* Imagem 2 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-31.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
 
-        {/* Modelo 2 */}
-        <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
-          <img
-            src="/web-5.jpg"
-            alt="Landing Page"
-            className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
-          />
-          <h3 className="text-xl font-semibold text-blue-300 mb-3">Landing Page</h3>
-          <p className="text-gray-400">
-            Focada em conversão e campanhas de marketing.
-          </p>
-        </div>
+      {/* Imagem 3 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-32.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
 
-        {/* Modelo 3 */}
-        <div className="bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
-          <img
-            src="/web-5.jpg"
-            alt="Portfólio Criativo"
-            className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
-          />
-          <h3 className="text-xl font-semibold text-blue-300 mb-3">Portfólio Criativo</h3>
-          <p className="text-gray-400">
-            Perfeito para designers e fotógrafos mostrarem seu trabalho.
-          </p>
-        </div>
+      <button
+        onClick={() => setGalleryOpen(false)}
+        className="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-xl text-white font-semibold mt-6 transition"
+      >
+        Fechar
+      </button>
+    </div>
+  </div>
+)}
+
+{/* Modal 2*/}
+<div
+  onClick={() => setGalleryOpen(true)}
+  className="cursor-pointer bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2"
+>
+  <img
+    src="/web-9.jpg"
+    className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
+  />
+  <h3 className="text-xl font-semibold text-blue-300 mb-3">Portfólio Criativo</h3>
+  <p className="text-gray-400">Perfeito para designers e fotógrafos mostrarem seu trabalho.</p>
+</div>
+
+{galleryOpen && (
+  <div
+    className="fixed inset-0 bg-black/90 z-50 overflow-y-scroll p-6"
+    onClick={() => setGalleryOpen(false)}
+  >
+    <div
+      className="max-w-3xl mx-auto space-y-6"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <h2 className="text-2xl font-semibold text-blue-400 mb-4 text-center">
+        Portfólio Criativo – Prévia Completa
+      </h2>
+
+      {/* Imagem 1 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-3.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      {/* Imagem 2 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-31.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      {/* Imagem 3 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-32.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      <button
+        onClick={() => setGalleryOpen(false)}
+        className="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-xl text-white font-semibold mt-6 transition"
+      >
+        Fechar
+      </button>
+    </div>
+  </div>
+)}
+
+{/* Modal 3*/}
+<div
+  onClick={() => setGalleryOpen(true)}
+  className="cursor-pointer bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2"
+>
+  <img
+    src="/web-7.jpg"
+    className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
+  />
+  <h3 className="text-xl font-semibold text-blue-300 mb-3">Portfólio Criativo</h3>
+  <p className="text-gray-400">Perfeito para designers e fotógrafos mostrarem seu trabalho.</p>
+</div>
+
+{galleryOpen && (
+  <div
+    className="fixed inset-0 bg-black/90 z-50 overflow-y-scroll p-6"
+    onClick={() => setGalleryOpen(false)}
+  >
+    <div
+      className="max-w-3xl mx-auto space-y-6"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <h2 className="text-2xl font-semibold text-blue-400 mb-4 text-center">
+        Portfólio Criativo – Prévia Completa
+      </h2>
+
+      {/* Imagem 1 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/web-71.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      {/* Imagem 2 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/web-72.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      {/* Imagem 3 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/web-73.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      <button
+        onClick={() => setGalleryOpen(false)}
+        className="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-xl text-white font-semibold mt-6 transition"
+      >
+        Fechar
+      </button>
+    </div>
+  </div>
+)}
+
+{/* Modal 4*/}
+<div
+  onClick={() => setGalleryOpen(true)}
+  className="cursor-pointer bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2"
+>
+  <img
+    src="/web-6.jpg"
+    className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
+  />
+  <h3 className="text-xl font-semibold text-blue-300 mb-3">Portfólio Criativo</h3>
+  <p className="text-gray-400">Perfeito para designers e fotógrafos mostrarem seu trabalho.</p>
+</div>
+
+{galleryOpen && (
+  <div
+    className="fixed inset-0 bg-black/90 z-50 overflow-y-scroll p-6"
+    onClick={() => setGalleryOpen(false)}
+  >
+    <div
+      className="max-w-3xl mx-auto space-y-6"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <h2 className="text-2xl font-semibold text-blue-400 mb-4 text-center">
+        Portfólio Criativo – Prévia Completa
+      </h2>
+
+      {/* Imagem 1 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-3.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      {/* Imagem 2 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-31.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      {/* Imagem 3 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-32.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      <button
+        onClick={() => setGalleryOpen(false)}
+        className="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-xl text-white font-semibold mt-6 transition"
+      >
+        Fechar
+      </button>
+    </div>
+  </div>
+)}
+
+{/* Modal 1*/}
+<div
+  onClick={() => setGalleryOpen(true)}
+  className="cursor-pointer bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2"
+>
+  <img
+    src="/web-4.jpg"
+    className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
+  />
+  <h3 className="text-xl font-semibold text-blue-300 mb-3">Portfólio Criativo</h3>
+  <p className="text-gray-400">Perfeito para designers e fotógrafos mostrarem seu trabalho.</p>
+</div>
+
+{galleryOpen && (
+  <div
+    className="fixed inset-0 bg-black/90 z-50 overflow-y-scroll p-6"
+    onClick={() => setGalleryOpen(false)}
+  >
+    <div
+      className="max-w-3xl mx-auto space-y-6"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <h2 className="text-2xl font-semibold text-blue-400 mb-4 text-center">
+        Portfólio Criativo – Prévia Completa
+      </h2>
+
+      {/* Imagem 1 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-3.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      {/* Imagem 2 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-31.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      {/* Imagem 3 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-32.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      <button
+        onClick={() => setGalleryOpen(false)}
+        className="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-xl text-white font-semibold mt-6 transition"
+      >
+        Fechar
+      </button>
+    </div>
+  </div>
+)}
+
+{/* Modal 1*/}
+<div
+  onClick={() => setGalleryOpen(true)}
+  className="cursor-pointer bg-gray-900/60 hover:bg-gray-800/80 p-6 rounded-2xl shadow-lg border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2"
+>
+  <img
+    src="/web-5.jpg"
+    className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
+  />
+  <h3 className="text-xl font-semibold text-blue-300 mb-3">Portfólio Criativo</h3>
+  <p className="text-gray-400">Perfeito para designers e fotógrafos mostrarem seu trabalho.</p>
+</div>
+
+{galleryOpen && (
+  <div
+    className="fixed inset-0 bg-black/90 z-50 overflow-y-scroll p-6"
+    onClick={() => setGalleryOpen(false)}
+  >
+    <div
+      className="max-w-3xl mx-auto space-y-6"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <h2 className="text-2xl font-semibold text-blue-400 mb-4 text-center">
+        Portfólio Criativo – Prévia Completa
+      </h2>
+
+      {/* Imagem 1 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-3.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      {/* Imagem 2 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-31.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      {/* Imagem 3 */}
+      <div className="overflow-hidden rounded-xl border border-gray-700">
+        <img
+          src="/templ-32.jpg"
+          className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300 cursor-zoom-in"
+        />
+      </div>
+
+      <button
+        onClick={() => setGalleryOpen(false)}
+        className="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-xl text-white font-semibold mt-6 transition"
+      >
+        Fechar
+      </button>
+    </div>
+  </div>
+)}
+
+
+       
       </motion.div>
 
       {/* Botão Voltar */}
