@@ -47,7 +47,7 @@ export default function SiteModels() {
   ];
 
   return (
-    <section className="py-20 bg-[#020617] text-white px-6">
+    <section className="py-20 bg-[#020617] text-white px-20">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-blue-400 mb-12">
           Modelos de Sites
