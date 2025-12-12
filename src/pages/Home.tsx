@@ -1,7 +1,33 @@
 import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import type { MouseEvent } from "react";
+
+
 
 export default function Home() {
+  const mailTo = encodeURI(
+    "mailto:liontechdigital@gmail.com?subject=Solicitação de Site&body=Olá, tenho interesse em um site. Podemos conversar?"
+  );
+
+  const gmailIntent = encodeURI(
+    "googlegmail:///co?to=liontechdigital@gmail.com&subject=Solicitação%20de%20Site&body=Olá,%20tenho%20interesse%20em%20um%20site."
+  );
+
+  function handleContactClick(e: MouseEvent<HTMLAnchorElement>) {
+    e.preventDefault();
+
+    try {
+      window.location.href = gmailIntent;
+
+      setTimeout(() => {
+        window.location.href = mailTo;
+      }, 400);
+    } catch {
+      window.location.href = mailTo;
+    }
+  }
+
+
   return (
     <>
       {/* 🏠 Seção Início */}
@@ -33,13 +59,14 @@ export default function Home() {
       Desenvolvemos sites, lojas virtuais e sistemas personalizados que impulsionam o seu negócio.
     </p>
 <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=liontech.create@gmail.com&su=Solicitação%20de%20Criação%20de%20Site&body=Olá%2C%20tenho%20interesse%20em%20desenvolver%20um%20site%20com%20a%20LionTech.%20Poderia%20me%20passar%20mais%20informações%3F"
-  target="_blank"
-  rel="noopener noreferrer"
+  href={mailTo}
+  onClick={handleContactClick}
   className="hover:border-blue-200 text-white font-semibold px-8 lg:px-20 rounded-xl transition-all duration-300 shadow-lg hover:shadow-blue-500/40 border-2 border-blue-500 bg-blue-950 py-4 lg:py-5"
 >
   Solicite seu site agora
 </a>
+
+
 
 
   </div>
