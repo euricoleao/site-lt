@@ -30,8 +30,8 @@ export default function Home() {
           </h1>
 
           <p className="text-gray-300 text-lg mb-8">
-            Desenvolvemos sites, lojas virtuais e sistemas personalizados que
-            impulsionam o seu negócio.
+            Desenvolvemos sites, lojas virtuais e sistemas <br /> personalizados
+            que impulsionam o seu negócio.
           </p>
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=liontech.create@gmail.com&su=Solicitação%20de%20Criação%20de%20Site&body=Olá%2C%20tenho%20interesse%20em%20desenvolver%20um%20site%20com%20a%20LionTech.%20Poderia%20me%20passar%20mais%20informações%3F"

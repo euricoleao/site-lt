@@ -1,5 +1,4 @@
-
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 interface EcommerceModel {
   id: number;
@@ -11,96 +10,106 @@ interface EcommerceModel {
 const ecommerceModels: EcommerceModel[] = [
   {
     id: 1,
-    title: "Loja Moderna",
-    image: "/webv-1.avif",
-    description: "Design dinâmico e moderno, ideal para marcas que querem impacto visual.",
+    title: 'Loja Moderna',
+    image: '/webv-1.avif',
+    description:
+      'Design dinâmico e moderno, ideal para marcas que querem impacto visual.',
   },
   {
     id: 2,
-    title: "Loja Minimalista",
-    image: "/webv-2.avif",
-    description: "Estilo limpo e elegante, com foco total nos produtos.",
+    title: 'Loja Minimalista',
+    image: '/webv-2.avif',
+    description: 'Estilo limpo e elegante, com foco total nos produtos.',
   },
   {
     id: 3,
-    title: "Loja Premium",
-    image: "/webv-4.avif",
-    description: "Visual sofisticado, perfeito para marcas que valorizam exclusividade.",
+    title: 'Loja Premium',
+    image: '/webv-4.avif',
+    description:
+      'Visual sofisticado, perfeito para marcas que valorizam exclusividade.',
   },
-   {
+  {
     id: 1,
-    title: "Loja Moderna",
-    image: "/webv-5.avif",
-    description: "Design dinâmico e moderno, ideal para marcas que querem impacto visual.",
+    title: 'Loja Moderna',
+    image: '/webv-5.avif',
+    description:
+      'Design dinâmico e moderno, ideal para marcas que querem impacto visual.',
   },
   {
     id: 2,
-    title: "Loja Minimalista",
-    image: "/webv-6.avif",
-    description: "Estilo limpo e elegante, com foco total nos produtos.",
+    title: 'Loja Minimalista',
+    image: '/webv-6.avif',
+    description: 'Estilo limpo e elegante, com foco total nos produtos.',
   },
   {
     id: 3,
-    title: "Loja Premium",
-    image: "/webv-7.avif",
-    description: "Visual sofisticado, perfeito para marcas que valorizam exclusividade.",
+    title: 'Loja Premium',
+    image: '/webv-7.avif',
+    description:
+      'Visual sofisticado, perfeito para marcas que valorizam exclusividade.',
   },
 
-   {
+  {
     id: 1,
-    title: "Loja Moderna",
-    image: "/webv-8.avif",
-    description: "Design dinâmico e moderno, ideal para marcas que querem impacto visual.",
+    title: 'Loja Moderna',
+    image: '/webv-8.avif',
+    description:
+      'Design dinâmico e moderno, ideal para marcas que querem impacto visual.',
   },
   {
     id: 2,
-    title: "Loja Minimalista",
-    image: "/webv-10.avif",
-    description: "Estilo limpo e elegante, com foco total nos produtos.",
+    title: 'Loja Minimalista',
+    image: '/webv-10.avif',
+    description: 'Estilo limpo e elegante, com foco total nos produtos.',
   },
   {
     id: 3,
-    title: "Loja Premium",
-    image: "/webv-11.avif",
-    description: "Visual sofisticado, perfeito para marcas que valorizam exclusividade.",
+    title: 'Loja Premium',
+    image: '/webv-11.avif',
+    description:
+      'Visual sofisticado, perfeito para marcas que valorizam exclusividade.',
   },
 
-   {
+  {
     id: 1,
-    title: "Loja Moderna",
-    image: "/webv-12.avif",
-    description: "Design dinâmico e moderno, ideal para marcas que querem impacto visual.",
+    title: 'Loja Moderna',
+    image: '/webv-12.avif',
+    description:
+      'Design dinâmico e moderno, ideal para marcas que querem impacto visual.',
   },
   {
     id: 2,
-    title: "Loja Minimalista",
-    image: "/webv.avif",
-    description: "Estilo limpo e elegante, com foco total nos produtos.",
+    title: 'Loja Minimalista',
+    image: '/webv.avif',
+    description: 'Estilo limpo e elegante, com foco total nos produtos.',
   },
   {
     id: 3,
-    title: "Loja Premium",
-    image: "/webv-13.avif",
-    description: "Visual sofisticado, perfeito para marcas que valorizam exclusividade.",
+    title: 'Loja Premium',
+    image: '/webv-13.avif',
+    description:
+      'Visual sofisticado, perfeito para marcas que valorizam exclusividade.',
   },
 
-   {
+  {
     id: 1,
-    title: "Loja Moderna",
-    image: "/webv-14.avif",
-    description: "Design dinâmico e moderno, ideal para marcas que querem impacto visual.",
+    title: 'Loja Moderna',
+    image: '/webv-14.avif',
+    description:
+      'Design dinâmico e moderno, ideal para marcas que querem impacto visual.',
   },
   {
     id: 2,
-    title: "Loja Minimalista",
-    image: "/webv-15.avif",
-    description: "Estilo limpo e elegante, com foco total nos produtos.",
+    title: 'Loja Minimalista',
+    image: '/webv-15.avif',
+    description: 'Estilo limpo e elegante, com foco total nos produtos.',
   },
   {
     id: 3,
-    title: "Loja Premium",
-    image: "/webv-16.avif",
-    description: "Visual sofisticado, perfeito para marcas que valorizam exclusividade.",
+    title: 'Loja Premium',
+    image: '/webv-16.avif',
+    description:
+      'Visual sofisticado, perfeito para marcas que valorizam exclusividade.',
   },
 ];
 
@@ -108,17 +117,19 @@ export default function EcommerceModels() {
   return (
     <section
       id="modelos-ecommerce"
-      className="bg-gradient-to-b from-[#bebcdd] to-[#030014] text-white py-20 px-8 lg:px-20"
+      className="bg-gradient-to-b from-[#bebcdd] to-[#030014] text-white py-20 px-8 lg:px-25"
       style={{ backgroundImage: "url('/bgservice.jpg')" }}
     >
       <div className="max-w-6xl mx-auto text-center">
-           <Link
-  to="/"
-  className="inline-block mb-6 text-blue-400 hover:text-blue-300 transition"
->
-  ← Voltar à Home
-</Link>
-        <h2 className="text-4xl font-bold mb-12 text-blue-400">Modelos de E-commerce</h2>
+        <Link
+          to="/"
+          className="inline-block mb-6 text-blue-400 hover:text-blue-300 transition"
+        >
+          ← Voltar à Home
+        </Link>
+        <h2 className="text-4xl font-bold mb-12 text-blue-400">
+          Modelos de E-commerce
+        </h2>
 
         <div className="grid md:grid-cols-3 gap-10">
           {ecommerceModels.map((model) => (
@@ -131,7 +142,9 @@ export default function EcommerceModels() {
                 alt={model.title}
                 className="w-full h-48 object-cover rounded-xl mb-5 border border-gray-700"
               />
-              <h3 className="text-xl font-semibold text-blue-300 mb-3">{model.title}</h3>
+              <h3 className="text-xl font-semibold text-blue-300 mb-3">
+                {model.title}
+              </h3>
               <p className="text-gray-400">{model.description}</p>
             </div>
           ))}
