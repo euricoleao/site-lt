@@ -249,17 +249,17 @@ export default function Home() {
             alt="Logo LionTech"
             className="w-15 h-15 scale-150"
           />
-          <span className="font-semibold text-lg">LionTech</span>
+          <span className="font-semibold text-lg">LionTech_Create</span>
         </div>
         <p className="text-gray-400 text-sm mb-2">
-          © 2025 LionTech. Todos os direitos reservados.
+          © 2025 LionTech_Create. Todos os direitos reservados.
         </p>
         <div className="flex justify-center space-x-6 mb-1">
           <a href="#">
             <FaFacebook size={20} className="hover:text-blue-400" />
           </a>
           <a
-            href="https://instagram.com/liontechcreate"
+            href="https://instagram.com/liontech_create"
             target="_blank"
             rel="noopener noreferrer"
           >
